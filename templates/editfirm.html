@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Редактирование региона</title>
+        <link rel="stylesheet" href="../static/hf.css" />
+    </head>
+
+    <body>
+
+        <h2>Редактирование фирмы</h2>
+
+        <form method="POST" action="/editedfirms">
+            <table>
+                <tr><td>ID</td><td><input name="id" type="number" width="60" value="{{ id_firm }}"></td></tr>
+                <tr><td>ID региона</td><td><input name="id_reg" type="number" width="60" value="{{ id_reg }}"></td></tr>
+                <tr><td>Имя фирмы</td><td><input name="name_firm" type="TEXT" value="{{ firm_name }}"></td></tr>
+                <tr><td>Информация</td><td><input name="info_firm" type="TEXT" value="{{ firm_info }}"></td></tr>
+            </table>
+            <p>Когда будете готовы нажмите кнопку</p>
+            <p><input value="Вперёд!" type="SUBMIT"></p>
+        </form>
+
+    </body>
+
+</html>

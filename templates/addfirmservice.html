@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Добавление услуги фирмы</title>
+        <link rel="stylesheet" href="../static/hf.css" />
+    </head>
+
+    <body>
+
+        <h2>Добавление услуги фирмы</h2>
+
+        <form method="POST" action="/firmservice">
+            <table>
+                <tr><td>ID Фирмы</td><td><input name="id_firm" type="number" width="60"></td></tr>
+                <tr><td>ID Услуги</td><td><input name="id_service" type="number" width="60"></td></tr>
+            </table>
+            <p>Когда будете готовы нажмите кнопку</p>
+            <p><input value="Вперёд!" type="SUBMIT"></p>
+        </form>
+
+    </body>

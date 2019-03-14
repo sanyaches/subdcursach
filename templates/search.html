@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Поиск фирм</title>
+        <link rel="stylesheet" href="../static/hf.css" />
+    </head>
+
+    <body>
+
+        <h2>Поиск фирм</h2>
+
+        <form method="POST" action="/searched">
+            <table>
+                <tr><td>Регион: </td><td><input name="reg_name" type="TEXT"></td></tr>
+                <tr><td>Необходимая услуга: </td><td><input name="service_name" type="TEXT" ></td></tr>
+            </table>
+            <p>Когда будете готовы нажмите кнопку</p>
+            <p><input value="Искать!" type="SUBMIT"></p>
+        </form>
+
+        <a href="main" target="_self">
+            <input value="На главную" type="SUBMIT">
+        </a>
+    </body>
+</html>

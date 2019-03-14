@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+    <a class="underlined" href="firm">Фирмы</a> |
+    <a class="underlined" href="regions">Регионы</a> |
+    <a class="underlined" href="services">Услуги</a>
+
+    <h2>{{ the_title }}</h2>
+
+    <table>
+        <tr>
+            {% for row_title in row_titles %}
+                <th>{{ row_title }}</th>
+            {% endfor %}
+        </tr>
+        {% for log_row in the_data %}
+            <tr>
+                {% for item in log_row %}
+                    <td>{{ item }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+
+    <a href="addfirmservice" target="_blank">
+        <input value="Добавить" type="SUBMIT">
+    </a>
+
+    <a href="chooseidfirmservice" target="_blank">
+        <input value="Удалить" type="SUBMIT">
+    </a>
+
+    <br><br><br>
+    <a href="main" target="_self">
+        <input value="На главную" type="SUBMIT">
+    </a>
+{% endblock %}
